@@ -1,0 +1,125 @@
+/* Base reset */
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+/* Body and Font Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    /* Stack for mobile */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #222;
+}
+
+header,
+nav {
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo img {
+    position: relative;
+    top: 0.33em;
+}
+
+/* Navbar Styling for Mobile */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    /* Stack links for mobile */
+    gap: 5px;
+}
+
+.navbar a {
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main,
+section {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.project,
+.experience {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Tablet View - 768px and Up */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        /* Horizontal layout for nav */
+        justify-content: space-between;
+    }
+
+    /* Align navbar links in a row */
+    .navbar {
+        flex-direction: row;
+    }
+
+    .navbar a {
+        margin: 0 10px;
+    }
+
+    .project,
+    .experience {
+        display: inline-block;
+        width: 48%;
+        /* Two items per row */
+        margin-right: 2%;
+    }
+}
+
+/* Desktop View - 1024px and Up */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
